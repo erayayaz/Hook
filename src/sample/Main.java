@@ -21,32 +21,58 @@ public class Main extends Application {
 
 
        Pane pane = new Pane();
-       Arc arc = new Arc(50,50,10,10,90,90);
-       arc.setStroke(Color.DARKGREY);
+       Arc arc = new Arc(90,120,10,10,90,90);
+       arc.setStroke(Color.GREY);
        arc.setType(ArcType.OPEN);
-       arc.setStrokeWidth(2);
+       arc.setStrokeWidth(1);
        arc.setFill(Color.WHITE);
 
 
 
-       Line flat = new Line (50,40,60,40);
-       flat.setStrokeWidth(2);
-       flat.setStroke(Color.TEAL);
+       Line flat = new Line (90,110,100,110);
+       flat.setStrokeWidth(1.5);
+       flat.setStroke(Color.GREY);
 
-       Line flat2 = new Line (40,50,40,150);
-       flat2.setStrokeWidth(2);
-       flat2.setStroke(Color.TEAL);
-
-        Rectangle r3 = new Rectangle(60, 40, 5, 40);
-        r3.setArcWidth(5);
-        r3.setArcHeight(40);
-        r3.setStroke(Color.DARKSLATEGREY);
+       Line flat2 = new Line (80,120,80,200);
+       flat2.setStrokeWidth(1);
+       flat2.setStroke(Color.ORANGE);
 
 
-        pane.getChildren().addAll(arc,flat,flat2,r3); // Add arc to pane
+       Line flat3 = new Line (100,105,100,115);
+       flat3.setStrokeWidth(2.5);
+       flat3.setStroke(Color.RED);
+
+
+       Line flat4 = new Line (102.5,110,200,110);
+       flat4.setStrokeWidth(2.5);
+       flat4.setStroke(Color.BLACK);
+
+       Arc arc1 = new Arc(215,110,15,15,0,180);
+       arc1.setStroke(Color.GREY);
+       arc1.setType(ArcType.OPEN);
+       arc1.setStrokeWidth(2.5);
+       arc1.setFill(Color.WHITE);
+
+       Line flat5 = new Line (230,110,250,110);
+       flat5.setStrokeWidth(2.5);
+       flat5.setStroke(Color.BLACK);
+
+       Arc arc2 = new Arc(90,200,10,10,180,90);
+       arc2.setStroke(Color.GREY);
+       arc2.setType(ArcType.OPEN);
+       arc2.setStrokeWidth(1);
+       arc2.setFill(Color.WHITE);
+
+       Line flat6 = new Line (90,210,250,210);
+       flat6.setStrokeWidth(1);
+       flat6.setStroke(Color.BLACK);
+
+
+
+        pane.getChildren().addAll(arc,arc1,arc2,flat,flat2,flat3,flat4,flat5,flat6); // Add arc to pane
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Eray Ayaz");
-        Scene scene = new Scene (pane,300,300);
+        Scene scene = new Scene (pane,400,400);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
