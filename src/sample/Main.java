@@ -1,14 +1,12 @@
 package sample;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.*;
 import javafx.scene.shape.*;
 import javafx.stage.Stage;
-import javafx.scene.text.Text;
+
 
 public class Main extends Application {
 
@@ -87,7 +85,6 @@ public class Main extends Application {
 
 
         pane.getChildren().addAll(arc,arc1,arc2,flat,flat2,flat3,flat4,flat5,flat6,flat7,flat8,flat9,circle1,circle2); // Add arc to pane
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Eray Ayaz");
         Scene scene = new Scene (pane,400,400);
         primaryStage.setScene(scene);

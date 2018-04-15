@@ -93,8 +93,7 @@ public class deneme extends Application {
 
 
         pane.getChildren().addAll(arc,arc1,arc2,flat,flat2,flat3,flat4,flat5,flat6,flat7,flat8,flat9,circle1,circle2); // Add arc to pane
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Eray Ayaz");
+        primaryStage.setTitle("Level 1");
         Scene scene = new Scene (pane,400,400);
         primaryStage.setScene(scene);
         primaryStage.show();
