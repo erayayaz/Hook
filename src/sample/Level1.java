@@ -10,7 +10,7 @@ import javafx.scene.shape.*;
 import javafx.stage.Stage;
 import javafx.scene.text.Text;
 
-public class deneme extends Application {
+public class Level1 extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
@@ -21,11 +21,24 @@ public class deneme extends Application {
 
 
         Pane pane = new Pane();
+
         Arc arc = new Arc(90,120,10,10,90,90);
         arc.setStroke(Color.GREY);
         arc.setType(ArcType.OPEN);
         arc.setStrokeWidth(1);
         arc.setFill(Color.WHITE);
+
+        Arc arc1 = new Arc(215,110,15,15,0,180);
+        arc1.setStroke(Color.BLACK);
+        arc1.setType(ArcType.OPEN);
+        arc1.setStrokeWidth(2.5);
+        arc1.setFill(Color.WHITE);
+
+        Arc arc2 = new Arc(90,200,10,10,180,90);
+        arc2.setStroke(Color.GREY);
+        arc2.setType(ArcType.OPEN);
+        arc2.setStrokeWidth(1);
+        arc2.setFill(Color.WHITE);
 
 
 
@@ -47,21 +60,9 @@ public class deneme extends Application {
         flat4.setStrokeWidth(2.5);
         flat4.setStroke(Color.BLACK);
 
-        Arc arc1 = new Arc(215,110,15,15,0,180);
-        arc1.setStroke(Color.BLACK);
-        arc1.setType(ArcType.OPEN);
-        arc1.setStrokeWidth(2.5);
-        arc1.setFill(Color.WHITE);
-
         Line flat5 = new Line (230,110,250,110);
         flat5.setStrokeWidth(2.5);
         flat5.setStroke(Color.BLACK);
-
-        Arc arc2 = new Arc(90,200,10,10,180,90);
-        arc2.setStroke(Color.GREY);
-        arc2.setType(ArcType.OPEN);
-        arc2.setStrokeWidth(1);
-        arc2.setFill(Color.WHITE);
 
         Line flat6 = new Line (90,210,250,210);
         flat6.setStrokeWidth(1);
