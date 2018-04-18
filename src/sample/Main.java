@@ -65,7 +65,13 @@ public class Main extends Application {
 
    private void deleteLine(Line flat) {
        double x = flat.getStartY();
-       x += 1 ;
-       flat.setStartY(x);
+
+       if(x == 240){
+           x = 240;
+       }
+       else{
+           x += 1 ;
+           flat.setStartY(x);
+       }
    }
 }
