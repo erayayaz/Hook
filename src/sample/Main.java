@@ -15,6 +15,9 @@ import javafx.stage.Stage;
 import javafx.scene.control.Button;
 import javafx.event.ActionEvent;
 import javafx.util.Duration;
+import javafx.animation.Timeline;
+import javafx.animation.KeyFrame;
+import javafx.event.EventHandler;
 
 
 public class Main extends Application {
@@ -38,17 +41,19 @@ public class Main extends Application {
       flat7.setStrokeWidth(1);
       flat7.setStroke(Color.GREY);
 
+
       pane.getChildren().addAll(flat7,circle2);
+
+
 
       circle2.setOnMouseClicked(event -> {
 
+         Timeline animation = new Timeline(
+                 new KeyFrame(Duration.millis(1), e -> deleteLine(flat7)));
 
-         Duration.millis(1000);
-         flat7.setStartY(240);
-
-
-
+         animation.play();
       });
+
 
       primaryStage.setTitle("Level 1");
       primaryStage.setResizable(false);
@@ -56,5 +61,9 @@ public class Main extends Application {
       primaryStage.setScene(scene);
       primaryStage.show();
 
+   }
+
+   private void deleteLine(Line flat) {
+      flat.setStartY(240);
    }
 }

@@ -46,14 +46,11 @@ public class Level1 extends Application {
         flat2.setStroke(Color.GREY);
 
 
-        Line flat3 = new Line (100,105,100,115);
-        flat3.setStrokeWidth(2.5);
-        flat3.setStroke(Color.BLACK);
+        FlatLine flat3 = new FlatLine(100, 105, 100, 115 );
 
 
-        Line flat4 = new Line (102.5,110,200,110);
-        flat4.setStrokeWidth(2.5);
-        flat4.setStroke(Color.BLACK);
+        FlatLine flat4 = new FlatLine (102.5,110,200,110);
+
 
         Line flat5 = new Line (230,110,250,110);
         flat5.setStrokeWidth(2.5);
@@ -88,7 +85,7 @@ public class Level1 extends Application {
         circle2.setFill(Color.BLACK);
 
 
-        pane.getChildren().addAll(arc,arc1,arc2,flat,flat2,flat3,flat4,flat5,flat6,flat7,flat8,flat9,circle1,circle2); // Add arc to pane
+        pane.getChildren().addAll(arc,arc1,arc2,flat,flat2,flat3.myFlatLine(),flat4.myFlatLine(),flat5,flat6,flat7,flat8,flat9,circle1,circle2); // Add arc to pane
         primaryStage.setTitle("Level 1");
         primaryStage.setResizable(false);
         Scene scene = new Scene (pane,400,400);
