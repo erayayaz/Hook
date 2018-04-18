@@ -115,6 +115,7 @@ public class Level4 extends Application {
 
         Scene scene = new Scene(pane4, 400, 400);
         primaryStage.setTitle("Level 4"); // Set the stage title
+        primaryStage.setResizable(false);
         primaryStage.setScene(scene); // Place the scene in the stage
         //   primaryStage.setResizable(false);
         primaryStage.show(); // Display the stage

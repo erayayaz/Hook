@@ -15,11 +15,6 @@ public class Level1 extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
 
-
-
-
-
-
         Pane pane = new Pane();
 
         Arc arc = new Arc(90,120,10,10,90,90);
@@ -95,6 +90,7 @@ public class Level1 extends Application {
 
         pane.getChildren().addAll(arc,arc1,arc2,flat,flat2,flat3,flat4,flat5,flat6,flat7,flat8,flat9,circle1,circle2); // Add arc to pane
         primaryStage.setTitle("Level 1");
+        primaryStage.setResizable(false);
         Scene scene = new Scene (pane,400,400);
         primaryStage.setScene(scene);
         primaryStage.show();

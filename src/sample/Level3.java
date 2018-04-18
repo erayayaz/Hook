@@ -136,6 +136,7 @@ public class Level3 extends Application {
 
         Scene scene = new Scene(pane3, 400, 400);
         primaryStage.setTitle("Level 3"); // Set the stage title
+        primaryStage.setResizable(false);
         primaryStage.setScene(scene); // Place the scene in the stage
         //   primaryStage.setResizable(false);
         primaryStage.show(); // Display the stage
