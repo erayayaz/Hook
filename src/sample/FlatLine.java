@@ -11,8 +11,6 @@ import static javafx.scene.paint.Color.GREY;
 
 public class FlatLine {
 
-    private String Color = "BLACK";
-    private double StrokeWidth = 2.5;
     private double startX;
     private double startY;
     private double endX;
@@ -30,10 +28,11 @@ public class FlatLine {
 
     }
 
-    public Line myFlatLine(){
-        Line flat = new Line (this.startX,this.startY,this.endX,this.endY);
-        flat.setStrokeWidth(this.StrokeWidth);
+    public Line flatLine(){
+        Line flatLine = new Line (startX, startY, endX, endY);
+        flatLine.setStrokeWidth(2.5);
+        flatLine.setStroke(Color.BLACK);
 
-        return flat;
+        return flatLine;
     }
 }

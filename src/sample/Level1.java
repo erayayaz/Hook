@@ -85,7 +85,7 @@ public class Level1 extends Application {
         circle2.setFill(Color.BLACK);
 
 
-        pane.getChildren().addAll(arc,arc1,arc2,flat,flat2,flat3.myFlatLine(),flat4.myFlatLine(),flat5,flat6,flat7,flat8,flat9,circle1,circle2); // Add arc to pane
+        pane.getChildren().addAll(arc,arc1,arc2,flat,flat2,flat3.flatLine(),flat4.flatLine(),flat5,flat6,flat7,flat8,flat9,circle1,circle2); // Add arc to pane
         primaryStage.setTitle("Level 1");
         primaryStage.setResizable(false);
         Scene scene = new Scene (pane,400,400);

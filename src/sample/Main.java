@@ -49,8 +49,8 @@ public class Main extends Application {
       circle2.setOnMouseClicked(event -> {
 
          Timeline animation = new Timeline(
-                 new KeyFrame(Duration.millis(1), e -> deleteLine(flat7)));
-
+                 new KeyFrame(Duration.millis(50), e -> deleteLine(flat7)));
+         animation.setCycleCount(Timeline.INDEFINITE);
          animation.play();
       });
 
@@ -64,6 +64,8 @@ public class Main extends Application {
    }
 
    private void deleteLine(Line flat) {
-      flat.setStartY(240);
+       double x = flat.getStartY();
+       x += 1 ;
+       flat.setStartY(x);
    }
 }
