@@ -6,7 +6,7 @@ import javafx.scene.shape.ArcType;
 
 public class ConnectorArc {
 
-    private double radius = 15;
+    private double radius = 10;
     private double centerX;
     private double centerY;
     private double startAngle;
@@ -26,7 +26,7 @@ public class ConnectorArc {
 
     public Arc connectorArc() {
         Arc connectorArc = new Arc(centerX, centerY, radius, radius, startAngle, length);
-        connectorArc.setStroke(Color.BLACK);
+        connectorArc.setStroke(Color.GREY);
         connectorArc.setType(ArcType.OPEN);
         connectorArc.setStrokeWidth(1);
         connectorArc.setFill(Color.TRANSPARENT);

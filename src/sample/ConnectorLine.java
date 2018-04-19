@@ -25,7 +25,7 @@ public class ConnectorLine {
     public Line connectorLine(){
         Line connectorLine = new Line (startX, startY, endX, endY);
         connectorLine.setStrokeWidth(1);
-        connectorLine.setStroke(Color.BLACK);
+        connectorLine.setStroke(Color.GREY);
 
         return connectorLine;
     }
