@@ -19,131 +19,38 @@ public class Level2 extends Application {
 
         Pane pane2 = new Pane();
 
-        Line flat = new Line (100,120,100,270);
-        flat.setStrokeWidth(1);
-        flat.setStroke(GREY);
+        ConnectorLine connectorLine = new ConnectorLine(100, 120, 100, 270);
+        ConnectorLine connectorLine1 = new ConnectorLine(110, 110, 115, 110);
+        ConnectorLine connectorLine2 = new ConnectorLine(165, 230, 165, 270);
+        ConnectorLine connectorLine3 = new ConnectorLine(215, 230, 215, 270);
+        ConnectorLine connectorLine4 = new ConnectorLine(337.5,180,337.5,270);
+        ConnectorLine connectorLine5 = new ConnectorLine(322,170,327.5,170);
 
-        Line flat2 = new Line (115,105,115,115);
-        flat2.setStrokeWidth(2.5);
-        flat2.setStroke(BLACK);
+        ConnectorArc connectorArc = new ConnectorArc(110,120,10,10,90,90);
+        ConnectorArc connectorArc1 = new ConnectorArc(327.5,180,10,10,0,90);
 
-        Line flat3 = new Line (110,110,115,110);
-        flat3.setStrokeWidth(1);
-        flat3.setStroke(GREY);
+        FlatLine flatLine = new FlatLine(115,110,168,110);
+        FlatLine flatLine1 = new FlatLine(165,65,165,95);
+        FlatLine flatLine2 = new FlatLine(165,125,165,155);
+        FlatLine flatLine3 = new FlatLine(165,185,165,230);
+        FlatLine flatLine4 = new FlatLine(215,167,215,230);
+        FlatLine flatLine5 = new FlatLine(162,170,200,170);
+        FlatLine flatLine6 = new FlatLine(230,170,320,170);
 
-        Line flat4 = new Line (115,110,168,110);
-        flat4.setStrokeWidth(2.5);
-        flat4.setStroke(BLACK);
+        PerpendicularLine perpendicularLine = new PerpendicularLine(115,105,115,115);
+        PerpendicularLine perpendicularLine1 = new PerpendicularLine(160,230,170,230);
+        PerpendicularLine perpendicularLine2 = new PerpendicularLine(210,230,220,230);
+        PerpendicularLine perpendicularLine3 = new PerpendicularLine(320,165,320,175);
 
-        Line flat5 = new Line (165,65,165,95);
-        flat5.setStrokeWidth(2.5);
-        flat5.setStroke(BLACK);
+        SemiCircle semiCircle = new SemiCircle(165,110,15,15,270,180);
+        SemiCircle semiCircle1 = new SemiCircle(165,170,15,15,90,180);
+        SemiCircle semiCircle2 = new SemiCircle(215,170,15,15,0,180);
 
-        Line flat6 = new Line (165,125,165,155);
-        flat6.setStrokeWidth(2.5);
-        flat6.setStroke(BLACK);
+        FullCircle fullCircle = new FullCircle(100, 285);
+        FullCircle fullCircle1 = new FullCircle(165, 285);
+        FullCircle fullCircle2 = new FullCircle(215, 285);
+        FullCircle fullCircle3 = new FullCircle(337.5, 285);
 
-        Line flat7 = new Line (165,185,165,230);
-        flat7.setStrokeWidth(2.5);
-        flat7.setStroke(BLACK);
-
-        Line flat8 = new Line (160,230,170,230);
-        flat8.setStrokeWidth(2.5);
-        flat8.setStroke(BLACK);
-
-        Line flat9 = new Line (165,230,165,270);
-        flat9.setStrokeWidth(1);
-        flat9.setStroke(GREY);
-
-        Line flat10 = new Line (210,230,220,230);
-        flat10.setStrokeWidth(2.5);
-        flat10.setStroke(BLACK);
-
-        Line flat11 = new Line (215,230,215,270);
-        flat11.setStrokeWidth(1);
-        flat11.setStroke(GREY);
-
-        Line flat12 = new Line (215,167,215,230);
-        flat12.setStrokeWidth(2.5);
-        flat12.setStroke(BLACK);
-
-        Line flat13 = new Line (162,170,200,170);
-        flat13.setStrokeWidth(2.5);
-        flat13.setStroke(BLACK);
-
-        Line flat14 = new Line (230,170,320,170);
-        flat14.setStrokeWidth(2.5);
-        flat14.setStroke(BLACK);
-
-        Line flat15 = new Line (320,165,320,175);
-        flat15.setStrokeWidth(2.5);
-        flat15.setStroke(BLACK);
-
-        Line flat16 = new Line (322,170,327.5,170);
-        flat16.setStrokeWidth(1);
-        flat16.setStroke(GREY);
-
-        Line flat17 = new Line (337.5,180,337.5,270);
-        flat17.setStrokeWidth(1);
-        flat17.setStroke(GREY);
-
-        Circle circle1 = new Circle();
-        circle1.setCenterX(100);
-        circle1.setCenterY(285);
-        circle1.setRadius(15);
-        circle1.setFill(BLACK);
-
-        Circle circle2 = new Circle();
-        circle2.setCenterX(165);
-        circle2.setCenterY(285);
-        circle2.setRadius(15);
-        circle2.setFill(BLACK);
-
-        Circle circle3 = new Circle();
-        circle3.setCenterX(215);
-        circle3.setCenterY(285);
-        circle3.setRadius(15);
-        circle3.setFill(BLACK);
-
-        Circle circle4 = new Circle();
-        circle4.setCenterX(337.5);
-        circle4.setCenterY(285);
-        circle4.setRadius(15);
-        circle4.setFill(BLACK);
-
-        Arc arc = new Arc(110,120,10,10,90,90);
-        arc.setStroke(GREY);
-        arc.setType(ArcType.OPEN);
-        arc.setStrokeWidth(1);
-        arc.setFill(WHITE);
-
-        Arc arc1 = new Arc(165,110,15,15,270,180);
-        arc1.setStroke(BLACK);
-        arc1.setType(ArcType.OPEN);
-        arc1.setStrokeWidth(2.5);
-        arc1.setFill(TRANSPARENT);
-
-        Arc arc2 = new Arc(165,170,15,15,90,180);
-        arc2.setStroke(BLACK);
-        arc2.setType(ArcType.OPEN);
-        arc2.setStrokeWidth(2.5);
-        arc2.setFill(TRANSPARENT);
-
-        Arc arc3 = new Arc(215,170,15,15,0,180);
-        arc3.setStroke(BLACK);
-        arc3.setType(ArcType.OPEN);
-        arc3.setStrokeWidth(2.5);
-        arc3.setFill(TRANSPARENT);
-
-        Arc arc4 = new Arc(327.5,180,10,10,0,90);
-        arc4.setStroke(GREY);
-        arc4.setType(ArcType.OPEN);
-        arc4.setStrokeWidth(1);
-        arc4.setFill(TRANSPARENT);
-
-
-
-        pane2.getChildren().addAll(flat,flat2,flat3,flat4,flat5,flat6,flat7,flat8,flat9,flat10,flat11,flat12,flat13,flat14,flat15,flat16,flat17,circle1,circle2,circle3,circle4,arc,arc1,arc2,arc3,arc4);
 
 
         Scene scene = new Scene(pane2, 400, 400);
@@ -161,4 +68,3 @@ public class Level2 extends Application {
     }
 
 }
-
