@@ -1,13 +1,8 @@
 package sample;
 
-import javafx.application.Application;
-import javafx.scene.paint.*;
 import javafx.scene.shape.*;
-import javafx.stage.Stage;
-import javafx.scene.text.Text;
 import javafx.scene.paint.Color;
 
-import static javafx.scene.paint.Color.GREY;
 
 public class FlatLine extends Line{
 
@@ -16,9 +11,10 @@ public class FlatLine extends Line{
     private double endX;
     private double endY;
 
-
+    //Create a constructor
     public FlatLine(double startX, double startY, double endX, double endY) {
         super(startX,startY,endX,endY);
+        //adding the features for flat line
         this.startX = startX;
         this.startY = startY;
         this.endX = endX;

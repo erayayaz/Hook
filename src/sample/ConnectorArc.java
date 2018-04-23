@@ -12,9 +12,10 @@ public class ConnectorArc extends Arc{
     private double startAngle;
     private double length;
 
-
+    //Create a constructor
     public ConnectorArc(double centerX, double centerY,double radiusX,double radiusY ,double startAngel, double length) {
         super(centerX,centerY,radiusX,radiusY,startAngel,length);
+        //adding the features for connector arcc
         this.setStroke(Color.GREY);
         this.setType(ArcType.OPEN);
         this.setStrokeWidth(1);

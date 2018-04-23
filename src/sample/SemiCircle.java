@@ -14,8 +14,10 @@ public class SemiCircle extends Arc{
     private double radiusX;
     private double radiusY;
 
+    //Create a constructor
     public SemiCircle(double centerX, double centerY,double radiusX,double radiusY, double startAngel, double length) {
         super(centerX,centerY,radiusX,radiusY,startAngel,length);
+        //adding the features for semi circle
         this.centerX = centerX;
         this.centerY = centerY;
         this.radiusX = radiusX;

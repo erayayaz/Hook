@@ -9,9 +9,10 @@ public class PerpendicularLine extends Line {
     private double endX;
     private double endY;
 
-
+    //Create a constructor
     public PerpendicularLine(double startX, double startY, double endX, double endY) {
         super(startX,startY,endX,endY);
+        //adding the features for perpendicular line
         this.startX = startX;
         this.startY = startY;
         this.endX = endX;

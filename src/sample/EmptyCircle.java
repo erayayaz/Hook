@@ -9,8 +9,10 @@ public class EmptyCircle extends Circle {
     private double centerX;
     private double centerY;
 
+    //Create a constructor
     public EmptyCircle(double centerX, double centerY) {
         super(centerX,centerY,15);
+        //adding the features for empty circle
         this.centerX = centerX;
         this.centerY = centerY;
         this.setCenterX(centerX);
