@@ -4,7 +4,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Arc;
 import javafx.scene.shape.ArcType;
 
-public class SemiCircle extends Arc{
+public class SemiCircle extends Arc {
 
     private double radius = 15;
     private double centerX;
@@ -15,8 +15,8 @@ public class SemiCircle extends Arc{
     private double radiusY;
 
     //Create a constructor
-    public SemiCircle(double centerX, double centerY,double radiusX,double radiusY, double startAngel, double length) {
-        super(centerX,centerY,radiusX,radiusY,startAngel,length);
+    public SemiCircle(double centerX, double centerY, double radiusX, double radiusY, double startAngel, double length) {
+        super(centerX, centerY, radiusX, radiusY, startAngel, length);
         //adding the features for semi circle
         this.centerX = centerX;
         this.centerY = centerY;
